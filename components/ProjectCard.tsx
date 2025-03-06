@@ -3,9 +3,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Code } from "lucide-react";
+import Link from "next/link";
 
 interface ProjectCardProps {
   title: string;
@@ -54,8 +53,8 @@ export function ProjectCard({
         </CardContent>
         <CardFooter className="flex justify-between p-6 pt-0">
           {demoUrl && (
-            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-black w-auto">
-              Ir al proyecto
+            <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-black w-auto">
+              <Link href={demoUrl} target="_blank">Ir al proyecto</Link>
             </Button>
           )}
         </CardFooter>

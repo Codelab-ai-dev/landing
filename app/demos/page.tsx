@@ -48,8 +48,8 @@ export default function Page() {
               image="/ia.png"
               index={3}
               slug="agente-finanzas"
-              demoUrl="https://demo.com"  // opcional
-              githubUrl="https://github.com"  // opcional
+              demoUrl="https://finance-ai-agent.vercel.app"  // opcional
+              githubUrl="https://github.com/juanpabon/finance-ai-agent"  // opcional
             />
           </div>
         </div>
