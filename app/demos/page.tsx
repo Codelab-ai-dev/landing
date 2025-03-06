@@ -25,15 +25,6 @@ export default function Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard
-              title="Agente de manejo de citas"
-              description="Optimiza la gestión de tus citas con un agente de inteligencia artificial diseñado para programar, recordar y coordinar reuniones de forma automática. Con integración en WhatsApp, correo y CRM, asegura una experiencia fluida y eficiente para clientes y profesionales."
-              image="/citas.png"
-              index={0}
-              slug="agente-citas"
-              demoUrl="https://demo.com"  // opcional
-              githubUrl="https://github.com"  // opcional
-            />
-            <ProjectCard
               title="Agente asistente"
               description="Simplifica la experiencia de tus clientes con un agente de IA inteligente que proporciona información detallada sobre tus productos y servicios en tiempo real."
               image="/asistente.png"
