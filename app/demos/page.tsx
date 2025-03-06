@@ -39,8 +39,7 @@ export default function Page() {
               image="/asistente.png"
               index={1}
               slug="agente-asistente"
-              demoUrl="https://demo.com"  // opcional
-              githubUrl="https://github.com"  // opcional
+              demoUrl="https://ai-assistant-agent.vercel.app"  // opcional
             />
             <ProjectCard
               title="Agente APP de finanzas"
@@ -49,7 +48,6 @@ export default function Page() {
               index={3}
               slug="agente-finanzas"
               demoUrl="https://finance-ai-agent.vercel.app"  // opcional
-              githubUrl="https://github.com/juanpabon/finance-ai-agent"  // opcional
             />
           </div>
         </div>
