@@ -43,16 +43,14 @@ export async function bot(prevState: ActionStateType, formData: FormData) {
     requests.set(userId, userRequest);
 
     // Llamar al webhook de N8N
-    const url = `${process.env.N8N_URL}/webhook/ask-agent`;
+    const url = `${process.env.N8N_URL}/webhook/landing-agent`;
 
     const response = await fetch(url, {
         method: "POST",
         body: JSON.stringify({ message: validation.data.message }),
     });
 
-    const data = await response.text();
-    const parsedData = JSON.parse(data);
-    const plainText = parsedData[0]?.output || "";
+    const plainText = await response.text();
 
     const success = SuccessSchema.parse(plainText);
 
